@@ -5,6 +5,9 @@ MESSAGE("config types: ${CMAKE_CONFIGRATION}")
 
 SET(CMAKE_CXX_STANDARD 11)
 
+
 AUX_SOURCE_DIRECTORY(. DIR_UNIT_01)
 
-ADD_EXECUTABLE(unit-01 ${DIR_UNIT_01})
+ADD_EXECUTABLE(unit-main main.cpp)
+ADD_EXECUTABLE(unit-char char-string.cpp)
+ADD_EXECUTABLE(unit-string string.cpp)
