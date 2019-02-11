@@ -7,5 +7,4 @@ message("config types: ${CMAKE_CONFIGRATION}")
 
 set(OUTPUT_ROOT ${PROJECT_SOURCE_DIR}/output)
 
-add_executable(demo-1 src/demo.cpp)
-add_executable(demo-2 src/demo-2.cpp)
+add_executable(unit-01 src/unit-01/main.cpp)
