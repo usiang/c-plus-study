@@ -28,10 +28,10 @@ int main(int argc, char **argv) {
     cout << sizeof(s2) << endl;
     cout << s2 << endl;
 
-    char *s3 = new char[10];
+    char *s3 = new char[10]();
     cout << s3 << endl;
     delete[](s3);
-    *s3 = NULL;
+    s3 = NULL;
 
     return 0;
 }
