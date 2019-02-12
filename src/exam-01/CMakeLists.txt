@@ -7,4 +7,4 @@ SET(CMAKE_CXX_STANDARD 11)
 
 AUX_SOURCE_DIRECTORY(. DIR_EXAM_01)
 
-ADD_EXECUTABLE(tn tracts_number.cpp)
+ADD_EXECUTABLE(tracts_number.out tracts_number.cpp)
