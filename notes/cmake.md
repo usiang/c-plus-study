@@ -22,3 +22,8 @@ ADD_SUBDIRECTORY(src/unit-01)
 # 生成一个可执行的文件
 ADD_EXECUTABLE(unit-string string.cpp)
 ```
+
+# 安装脚本
+
+<https://blog.csdn.net/10km/article/details/51711907>
+<https://juejin.im/post/5a71b3fc518825113b712a27>

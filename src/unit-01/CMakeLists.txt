@@ -10,3 +10,8 @@ AUX_SOURCE_DIRECTORY(. DIR_UNIT_01)
 ADD_EXECUTABLE(unit-main.out main.cpp)
 ADD_EXECUTABLE(unit-char.out char-string.cpp)
 ADD_EXECUTABLE(unit-string.out string.cpp)
+
+INSTALL(TARGETS unit-main.out unit-char.out unit-string.out
+        RUNTIME DESTINATION bin
+        LIBRARY DESTINATION lib
+        ARCHIVE DESTINATION lib/static)
