@@ -8,3 +8,8 @@ SET(CMAKE_CXX_STANDARD 11)
 AUX_SOURCE_DIRECTORY(. DIR_EXAM_01)
 
 ADD_EXECUTABLE(tracts_number.out tracts_number.cpp)
+
+INSTALL(TARGETS tracts_number.out
+        RUNTIME DESTINATION bin
+        LIBRARY DESTINATION lib
+        ARCHIVE DESTINATION lib/static)
