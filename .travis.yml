@@ -1,0 +1,20 @@
+language: cpp
+
+compiler:
+  - clang
+  - gcc
+
+os:
+  - linux
+
+branches:
+  only:
+    - master
+    - develop
+
+before_install:
+  - cmake .
+  - make
+
+script:
+  - make install

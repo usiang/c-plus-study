@@ -27,3 +27,8 @@ ADD_EXECUTABLE(unit-string string.cpp)
 
 <https://blog.csdn.net/10km/article/details/51711907>
 <https://juejin.im/post/5a71b3fc518825113b712a27>
+
+# 编译
+
+1. 执行 `cmake .` 生成make文件
+2. 执行 `make` 开始执行编译
