@@ -6,7 +6,8 @@ using namespace std;
  * c++ 中字符数组的处理
  */
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv)
+{
     /**
      * 在C/C++中，基础数据类型有 int double float char，没有string.字符串不是基础数据类型，
      * 在C中，字符串是使用char[] 实现的
@@ -24,7 +25,7 @@ int main(int argc, char **argv) {
     cout << sizeof(s1) << endl;
     cout << s1 << endl;
 
-    char s2[] = {'a','b','c'};
+    char s2[] = {'a', 'b', 'c'};
     cout << sizeof(s2) << endl;
     cout << s2 << endl;
 

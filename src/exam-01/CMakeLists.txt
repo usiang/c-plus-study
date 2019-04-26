@@ -5,13 +5,11 @@ MESSAGE("config types: ${CMAKE_CONFIGRATION}")
 
 SET(CMAKE_CXX_STANDARD 11)
 
-AUX_SOURCE_DIRECTORY(. DIR_UNIT_01)
+AUX_SOURCE_DIRECTORY(. DIR_EXAM_01)
 
-ADD_EXECUTABLE(unit-main.out main.cpp)
-ADD_EXECUTABLE(unit-char.out char-string.cpp)
-ADD_EXECUTABLE(unit-string.out string.cpp)
+ADD_EXECUTABLE(tracts_number.out tracts_number.cpp)
 
-INSTALL(TARGETS unit-main.out unit-char.out unit-string.out
+INSTALL(TARGETS tracts_number.out
         RUNTIME DESTINATION bin
         LIBRARY DESTINATION lib
         ARCHIVE DESTINATION lib/static)
