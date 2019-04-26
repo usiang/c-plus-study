@@ -8,7 +8,8 @@ SET(OUTPUT_ROOT ./output)
 SET(SET_TARGET_PROPERTIES ./target)
 SET(CMAKE_INSTALL_PREFIX /usr/local)
 
-ADD_SUBDIRECTORY(src/unit-01)
 ADD_SUBDIRECTORY(src/exam-01)
+ADD_SUBDIRECTORY(src/unit-01)
+ADD_SUBDIRECTORY(src/unit-09)
 
 INSTALL(FILES ${PROJECT_SOURCE_DIR}/src/exam-01/tracts_number.out DESTINATION /usr/local/bin/)
