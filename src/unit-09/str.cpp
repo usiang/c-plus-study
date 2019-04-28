@@ -13,6 +13,9 @@ Str::Str(char *s) {
 }
 
 Str::Str(Str &s) {
+    cout << s.st << endl;
+    cout << "Str::Str(Str &s)" << endl;
+
     st = new char[strlen(s.st) + 1];
     strcpy(st, s.st);
 }
@@ -24,7 +27,6 @@ Str &Str::operator=(Str &s) {
     delete st;
     st = new char[strlen(s.st) + 1];
     strcpy(st, s.st);
-
     return *this;
 }
 
@@ -32,7 +34,6 @@ Str &Str::operator=(char *s) {
     delete st;
     st = new char[strlen(s) + 1];
     strcpy(st, s);
-
     return *this;
 }
 

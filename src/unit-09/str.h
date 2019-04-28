@@ -10,6 +10,7 @@ class Str {
 private:
     char *st;
 public:
+
     Str(char *s);
 
     Str(Str &s);

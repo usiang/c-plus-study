@@ -7,10 +7,10 @@ SET(CMAKE_CXX_STANDARD 11)
 
 AUX_SOURCE_DIRECTORY(. DIR_UNIT_02)
 
-ADD_LIBRARY (str.so str.cpp)
-ADD_EXECUTABLE(str.out main.cpp)
+#ADD_LIBRARY (str.so str.cpp)
+ADD_EXECUTABLE(str.out main.cpp str.cpp)
 
-TARGET_LINK_LIBRARIES(str.out str.so )
+#TARGET_LINK_LIBRARIES(str.out str.so )
 
 INSTALL(TARGETS str.out
         RUNTIME DESTINATION bin
