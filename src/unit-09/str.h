@@ -5,6 +5,7 @@
 #ifndef C_PLUS_STUDY_STR_H
 #define C_PLUS_STUDY_STR_H
 
+#include <iostream>
 
 class Str {
 private:
@@ -18,6 +19,10 @@ public:
     Str &operator=(Str &s);
 
     Str &operator=(char *s);
+
+    friend std::ostream &operator<<(std::ostream &, const Str &);
+
+    friend std::istream &operator>>(std::istream &, Str &);
 
     void print();
 

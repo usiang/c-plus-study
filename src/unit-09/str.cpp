@@ -40,3 +40,13 @@ Str &Str::operator=(char *s) {
 void Str::print() {
     cout << st << endl;
 }
+
+std::ostream &operator<<(std::ostream &stream, const Str& str) {
+    stream << str.st << endl;
+    return stream;
+}
+
+std::istream &operator>>(std::istream &stream, Str &str) {
+    stream >> str.st;
+    return stream;
+}
